@@ -20,7 +20,7 @@ import { AuthContext } from "./Context/AuthContext"
 function App() {
   const { user } = useContext(AuthContext)
   return (
-    <Router>
+    <Router basename='/'>
       <Topbar />
     <Routes>
     <Route exact path="/" element={<Home />} />
